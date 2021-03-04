@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Bangun Datar</string>
+    <string name="owner">Nur Izza Latifah</string>
+    <string name="lingkaran">Lingkaran</string>
+    <string name="persegi">Persegi</string>
+    <string name="persegi_panjang">PersegiPanjang</string>
+    <string name="jajar_genjang">Jajar Genjang</string>
+    <string name="belah_ketupat">Belah Ketupat</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="layang_layang">Layang Layang</string>
+    <string name="trapesium">Trapesium</string>
+
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="sisi">Sisi</string>
+    <string name="alas">Alas</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="d1">Diagonal 1</string>
+    <string name="d2">Diagonal 2</string>
+    <string name="jari_jari">Jari Jari</string>
+    <string name="b1">Sisi Atas</string>
+    <string name="b2">Sisi Bawah</string>
+
+    <string name="luas">Hitung Luas</string>
+
+
+</resources>
