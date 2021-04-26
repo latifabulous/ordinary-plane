@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BangunDatar">
-        <activity android:name=".BelahKetupatActivity"></activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test"
+            android:theme="@style/Theme.BangunDatar.NoActionBar"></activity>
+        <activity android:name=".BelahKetupatActivity" />
         <activity android:name=".JajarGenjangActivity" />
         <activity android:name=".TrapesiumActivity" />
         <activity android:name=".LayangLayangActivity" />

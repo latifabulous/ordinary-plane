@@ -1,5 +1,6 @@
 package com.example.bangundatar
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,6 +26,8 @@ class LingkaranActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
+//        val luas: Double
+
         if (v?.id == R.id.btn_calculate) {
             val inputJariJari = etJariJari.text.toString().trim()
             val inputJariJariMod = inputJariJari.toDouble() % 7.0
@@ -46,6 +49,14 @@ class LingkaranActivity : AppCompatActivity(), View.OnClickListener {
                 0.0 ->  {
                     val luas = 22.0/7.0 * (inputJariJari.toDouble() * inputJariJari.toDouble())
                     tvResult.text = luas.toString()
+
+                    when(v?.id) {
+                        R.id.btn_calculate -> {
+                            val lingkaranIntent = Intent(this@LingkaranActivity, TestActivity::class.java)
+                            lingkaranIntent.putExtra(TestActivity.EXTRA_RESULT, luas)
+                            startActivity(lingkaranIntent)
+                        }
+                    }
                 }
                 else -> {
                     val luas = 3.14 * (inputJariJari.toDouble() * inputJariJari.toDouble())
